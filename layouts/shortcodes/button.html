@@ -1,0 +1,4 @@
+{{- $href := .Get "href" -}}
+{{- $variant := .Get "variant" | default "primary" -}}
+{{- $label := .Get "label" | default .Inner -}}
+<a class="dpj-button dpj-button--{{ $variant }}" href="{{ $href | safeURL }}">{{ $label }}</a>

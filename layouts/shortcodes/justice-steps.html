@@ -1,0 +1,11 @@
+{{- $active := int (.Get "active" | default 1) -}}
+{{- $steps := split (.Get "steps") "|" -}}
+<ol class="justice-steps">
+  {{- range $index, $step := $steps -}}
+    {{- $stepNumber := add $index 1 -}}
+    <li class="{{ if le $stepNumber $active }}active{{ end }}">
+      <span>{{ $stepNumber }}</span>
+      {{ trim $step " " }}
+    </li>
+  {{- end -}}
+</ol>

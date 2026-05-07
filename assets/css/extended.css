@@ -1,0 +1,293 @@
+/* Debout pour la Justice Madagascar - style institutionnel sobre */
+:root {
+  --theme: #ffffff;
+  --entry: #ffffff;
+  --primary: #1d1d1f;
+  --primary-soft: #1a202c;
+  --secondary: #4b5563;
+  --tertiary: #f3f4f6;
+  --content: #242629;
+  --accent: #b91c1c;
+  --accent-hover: #991b1b;
+  --accent-soft: #fef2f2;
+  --border: #d8dee7;
+  --shadow-soft: 0 10px 28px rgba(15, 23, 42, 0.07);
+}
+
+body {
+  font-feature-settings: "kern";
+  color: var(--primary-soft);
+  line-height: 1.65;
+}
+
+.main {
+  max-width: 1040px;
+}
+
+.post-title,
+.entry-header h2,
+h1,
+h2,
+h3 {
+  letter-spacing: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.35rem;
+  font-weight: 800;
+}
+
+.logo a {
+  gap: 10px;
+}
+
+.logo a img {
+  border-radius: 50%;
+}
+
+.home-info {
+  min-height: 360px;
+  margin-top: 18px;
+  margin-bottom: 52px;
+  padding: 44px 0 46px;
+  border-bottom: 1px solid var(--border);
+}
+
+.home-info .entry-header h1 {
+  max-width: 760px;
+  color: var(--primary);
+  font-size: clamp(2.25rem, 5vw, 4.25rem);
+  line-height: 1.06;
+}
+
+.home-info .entry-content {
+  max-width: 680px;
+  margin-top: 18px;
+  color: var(--secondary);
+  font-size: 1.08rem;
+}
+
+.post-content h1:first-child {
+  margin-top: 0;
+}
+
+.post-content h2 {
+  margin-top: 3rem;
+  padding-top: 0.25rem;
+}
+
+.post-title {
+  color: #2d3748;
+  font-size: 1.65rem;
+  font-weight: 800;
+}
+
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.dpj-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin: 0;
+  padding: 11px 20px;
+  border-radius: 6px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.dpj-button:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.dpj-button--secondary {
+  border-color: var(--primary-soft);
+  background: transparent;
+  color: var(--primary-soft);
+}
+
+.dpj-button--secondary:hover {
+  background: var(--primary-soft);
+  border-color: var(--primary-soft);
+  color: #ffffff;
+}
+
+.dpj-alert,
+.case-meta {
+  padding: 18px 20px;
+  margin: 22px 0;
+  border-radius: 6px;
+  background: var(--tertiary);
+  border-left: 5px solid var(--accent);
+}
+
+.post-entry {
+  padding: 24px !important;
+  margin-bottom: 26px !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  background: #fdfdfd !important;
+  box-shadow: var(--shadow-soft);
+}
+
+.post-entry:hover,
+.post-entry:focus-within {
+  border-color: #cfd6e3 !important;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.1);
+}
+
+.post-entry .entry-header h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #2d3748;
+  font-size: 1.35rem;
+}
+
+.post-entry .entry-content {
+  margin-top: 14px;
+  color: var(--secondary);
+  font-size: 0.95rem;
+}
+
+.entry-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.status-badge,
+.severity-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.status-badge {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px solid #fecaca;
+}
+
+.severity-badge {
+  background: #f8fafc;
+  color: #334155;
+  border: 1px solid #dbe3ef;
+  text-transform: uppercase;
+}
+
+.severity-badge--high {
+  background: #fff7ed;
+  color: #9a3412;
+  border-color: #fed7aa;
+}
+
+.dpj-alert p:last-child {
+  margin-bottom: 0;
+}
+
+.case-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  border-left-color: var(--primary);
+}
+
+.case-meta div,
+.case-meta dt,
+.case-meta dd {
+  margin: 0;
+}
+
+.case-meta dt {
+  color: var(--secondary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.case-meta dd {
+  margin-top: 3px;
+  color: var(--primary);
+  font-weight: 650;
+}
+
+.justice-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.justice-steps li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #ffffff;
+  font-weight: 600;
+}
+
+.justice-steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--tertiary);
+  color: var(--secondary);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.justice-steps li.active {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.justice-steps li.active span {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .home-info {
+    min-height: auto;
+    margin-bottom: 34px;
+    padding: 28px 0 34px;
+  }
+
+  .home-info .entry-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .dpj-button {
+    width: 100%;
+  }
+}

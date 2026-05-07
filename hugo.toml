@@ -1,0 +1,130 @@
+baseURL = 'https://www.dpj-madagascar.org/'
+locale = 'fr-FR'
+title = 'Debout pour la Justice Madagascar'
+theme = 'PaperMod'
+defaultContentLanguage = 'fr'
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+
+[languages]
+  [languages.fr]
+    label = 'Français'
+    contentDir = 'content/fr'
+    weight = 1
+    title = 'Debout pour la Justice Madagascar'
+    [languages.fr.params]
+      description = 'Collectif citoyen de documentation, de veille et d’interpellation sur les violations graves des droits humains à Madagascar.'
+      [languages.fr.params.homeInfoParams]
+        Title = 'Documenter l’injustice pour exiger la vérité.'
+        Content = 'Debout pour la Justice Madagascar documente les abus, soutient les victimes et interpelle les autorités nationales et internationales.'
+        PrimaryButtonText = 'Signaler une violation'
+        PrimaryButtonURL = '/contact/'
+        SecondaryButtonText = 'Voir nos rapports'
+        SecondaryButtonURL = '/posts/'
+    [languages.fr.menu]
+      [[languages.fr.menu.main]]
+        name = 'Accueil'
+        url = '/'
+        weight = 10
+      [[languages.fr.menu.main]]
+        name = 'Rapports'
+        url = '/posts/'
+        weight = 20
+      [[languages.fr.menu.main]]
+        name = 'Le Collectif'
+        url = '/about/'
+        weight = 30
+      [[languages.fr.menu.main]]
+        name = 'Ressources'
+        url = '/resources/'
+        weight = 35
+      [[languages.fr.menu.main]]
+        name = 'Signaler'
+        url = '/contact/'
+        weight = 40
+
+  [languages.en]
+    label = 'English'
+    contentDir = 'content/en'
+    weight = 2
+    title = 'Stand Up for Justice Madagascar'
+    [languages.en.params]
+      description = 'Citizen collective documenting, monitoring, and raising alerts on serious human rights violations in Madagascar.'
+      [languages.en.params.homeInfoParams]
+        Title = 'Document injustice to demand truth.'
+        Content = 'Stand Up for Justice Madagascar documents abuses, supports victims, and engages national and international authorities.'
+        PrimaryButtonText = 'Report a case'
+        PrimaryButtonURL = '/contact/'
+        SecondaryButtonText = 'Read our reports'
+        SecondaryButtonURL = '/posts/'
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        name = 'Home'
+        url = '/'
+        weight = 10
+      [[languages.en.menu.main]]
+        name = 'Reports'
+        url = '/posts/'
+        weight = 20
+      [[languages.en.menu.main]]
+        name = 'About'
+        url = '/about/'
+        weight = 30
+      [[languages.en.menu.main]]
+        name = 'Resources'
+        url = '/resources/'
+        weight = 35
+      [[languages.en.menu.main]]
+        name = 'Report a Case'
+        url = '/contact/'
+        weight = 40
+
+[params]
+  env = 'production'
+  author = 'DPJ Madagascar'
+  defaultTheme = 'light'
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  disableSpecial1stPost = true
+  mainSections = ['posts']
+
+  [params.homeInfoParams]
+    Title = 'Documenter l’injustice pour exiger la vérité.'
+    Content = 'Debout pour la Justice Madagascar documente les abus, soutient les victimes et interpelle les autorités nationales et internationales.'
+    PrimaryButtonText = 'Signaler une violation'
+    PrimaryButtonURL = '/contact/'
+    SecondaryButtonText = 'Voir nos rapports'
+    SecondaryButtonURL = '/posts/'
+
+  [params.label]
+    text = 'Debout pour la Justice'
+    icon = '/images/logo.png'
+    iconHeight = 42
+
+  [[params.socialIcons]]
+    name = 'email'
+    url = 'mailto:deboutpourlajustice2@gmail.com'
+
+[privacy]
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.youtube]
+    privacyEnhanced = true
+  [privacy.vimeo]
+    disabled = true
+  [privacy.x]
+    disabled = true
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = false
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  status = 'status'

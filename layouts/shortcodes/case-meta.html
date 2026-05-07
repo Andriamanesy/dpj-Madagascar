@@ -1,0 +1,27 @@
+{{- $isEnglish := eq .Page.Language.Lang "en" -}}
+<dl class="case-meta">
+  {{- with .Get "date" -}}
+    <div>
+      <dt>{{ if $isEnglish }}Date{{ else }}Date{{ end }}</dt>
+      <dd>{{ . }}</dd>
+    </div>
+  {{- end -}}
+  {{- with .Get "location" -}}
+    <div>
+      <dt>{{ if $isEnglish }}Location{{ else }}Lieu{{ end }}</dt>
+      <dd>{{ . }}</dd>
+    </div>
+  {{- end -}}
+  {{- with .Get "type" -}}
+    <div>
+      <dt>Type</dt>
+      <dd>{{ . }}</dd>
+    </div>
+  {{- end -}}
+  {{- with .Get "status" -}}
+    <div>
+      <dt>{{ if $isEnglish }}Status{{ else }}Statut{{ end }}</dt>
+      <dd>{{ . }}</dd>
+    </div>
+  {{- end -}}
+</dl>

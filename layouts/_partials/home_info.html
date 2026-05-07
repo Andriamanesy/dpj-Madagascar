@@ -1,0 +1,24 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content md-content">
+        {{ $opts := dict "display" "block" }}
+        {{ .Content | $.Page.RenderString $opts }}
+    </div>
+    {{- if or .PrimaryButtonText .SecondaryButtonText }}
+    <div class="buttons-container" aria-label="{{ if eq $.Page.Language.Lang "en" }}Primary actions{{ else }}Actions principales{{ end }}">
+        {{- with .PrimaryButtonText }}
+        <a class="dpj-button dpj-button--primary" href="{{ site.Params.homeInfoParams.PrimaryButtonURL | relLangURL }}">{{ . }}</a>
+        {{- end }}
+        {{- with .SecondaryButtonText }}
+        <a class="dpj-button dpj-button--secondary" href="{{ site.Params.homeInfoParams.SecondaryButtonURL | relLangURL }}">{{ . }}</a>
+        {{- end }}
+    </div>
+    {{- end }}
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+    </footer>
+</article>
+{{- end -}}

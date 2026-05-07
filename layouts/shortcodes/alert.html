@@ -1,0 +1,4 @@
+{{- $level := .Get "level" | default "warning" -}}
+<aside class="dpj-alert dpj-alert--{{ $level }}">
+  {{ .Inner | markdownify }}
+</aside>
