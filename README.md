@@ -31,7 +31,7 @@ Sur le site, ces fichiers pourront être liés avec un bouton comme :
 [Télécharger le rapport officiel (PDF)](/docs/Lettre_HCDH.pdf)
 ```
 
-### `assets/css/extended.css`
+### `assets/css/extended/dpj.css`
 
 Ce fichier sert à injecter le design personnalisé du site : couleurs sobres, boutons rouges, encadrés institutionnels, fiches de rapports et éléments de suivi.
 

@@ -1,24 +1,65 @@
 {{- with site.Params.homeInfoParams }}
 <article class="first-entry home-info">
-    <header class="entry-header">
-        <h1>{{ .Title | markdownify }}</h1>
-    </header>
-    <div class="entry-content md-content">
-        {{ $opts := dict "display" "block" }}
-        {{ .Content | $.Page.RenderString $opts }}
-    </div>
-    {{- if or .PrimaryButtonText .SecondaryButtonText }}
-    <div class="buttons-container" aria-label="{{ if eq $.Page.Language.Lang "en" }}Primary actions{{ else }}Actions principales{{ end }}">
-        {{- with .PrimaryButtonText }}
-        <a class="dpj-button dpj-button--primary" href="{{ site.Params.homeInfoParams.PrimaryButtonURL | relLangURL }}">{{ . }}</a>
+    <div class="home-info__content">
+        <p class="hero-kicker">{{ if eq $.Page.Language.Lang "en" }}Human rights monitoring in Madagascar{{ else }}Veille citoyenne des droits humains à Madagascar{{ end }}</p>
+        <header class="entry-header">
+            <h1>{{ .Title | markdownify }}</h1>
+        </header>
+        <div class="entry-content md-content">
+            {{ $opts := dict "display" "block" }}
+            {{ .Content | $.Page.RenderString $opts }}
+        </div>
+        {{- if or .PrimaryButtonText .SecondaryButtonText }}
+        <div class="buttons-container" aria-label="{{ if eq $.Page.Language.Lang "en" }}Primary actions{{ else }}Actions principales{{ end }}">
+            {{- with .PrimaryButtonText }}
+            <a class="dpj-button dpj-button--primary" href="{{ site.Params.homeInfoParams.PrimaryButtonURL | relLangURL }}">{{ . }}</a>
+            {{- end }}
+            {{- with .SecondaryButtonText }}
+            <a class="dpj-button dpj-button--secondary" href="{{ site.Params.homeInfoParams.SecondaryButtonURL | relLangURL }}">{{ . }}</a>
+            {{- end }}
+        </div>
         {{- end }}
-        {{- with .SecondaryButtonText }}
-        <a class="dpj-button dpj-button--secondary" href="{{ site.Params.homeInfoParams.SecondaryButtonURL | relLangURL }}">{{ . }}</a>
-        {{- end }}
+        <footer class="entry-footer">
+            {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+        </footer>
     </div>
-    {{- end }}
-    <footer class="entry-footer">
-        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
-    </footer>
+    <aside class="hero-panel" aria-label="{{ if eq $.Page.Language.Lang "en" }}Case monitoring summary{{ else }}Résumé du suivi des dossiers{{ end }}">
+        <div class="hero-panel__logo">
+            {{- with resources.Get "images/logo.png" }}
+            {{- $logo := .Resize "380x webp q85" }}
+            <img src="{{ $logo.RelPermalink }}" width="{{ $logo.Width }}" height="{{ $logo.Height }}" alt="Debout pour la Justice Madagascar">
+            {{- end }}
+        </div>
+        <dl class="hero-panel__stats">
+            <div>
+                <dt>3</dt>
+                <dd>{{ if eq $.Page.Language.Lang "en" }}monitored cases{{ else }}dossiers suivis{{ end }}</dd>
+            </div>
+            <div>
+                <dt>7</dt>
+                <dd>{{ if eq $.Page.Language.Lang "en" }}official letters{{ else }}lettres officielles{{ end }}</dd>
+            </div>
+            <div>
+                <dt>FR/EN</dt>
+                <dd>{{ if eq $.Page.Language.Lang "en" }}public archive{{ else }}archive publique{{ end }}</dd>
+            </div>
+        </dl>
+        <p>{{ if eq $.Page.Language.Lang "en" }}Documented cases are presented with caution, traceability, and respect for witness safety.{{ else }}Chaque dossier est présenté avec prudence, traçabilité et attention à la sécurité des témoins.{{ end }}</p>
+    </aside>
 </article>
+
+<section class="trust-strip" aria-label="{{ if eq $.Page.Language.Lang "en" }}Working principles{{ else }}Principes de travail{{ end }}">
+    <div>
+        <strong>{{ if eq $.Page.Language.Lang "en" }}Document{{ else }}Documenter{{ end }}</strong>
+        <span>{{ if eq $.Page.Language.Lang "en" }}facts, dates, places, sources{{ else }}faits, dates, lieux, sources{{ end }}</span>
+    </div>
+    <div>
+        <strong>{{ if eq $.Page.Language.Lang "en" }}Protect{{ else }}Protéger{{ end }}</strong>
+        <span>{{ if eq $.Page.Language.Lang "en" }}witnesses and exposed families{{ else }}témoins et familles exposées{{ end }}</span>
+    </div>
+    <div>
+        <strong>{{ if eq $.Page.Language.Lang "en" }}Engage{{ else }}Interpeller{{ end }}</strong>
+        <span>{{ if eq $.Page.Language.Lang "en" }}authorities and institutions{{ else }}autorités et institutions{{ end }}</span>
+    </div>
+</section>
 {{- end -}}

@@ -103,8 +103,8 @@ enableRobotsTXT = true
 
   [params.label]
     text = 'Debout pour la Justice'
-    icon = '/images/logo.png'
-    iconHeight = 42
+    icon = 'images/logo.png'
+    iconHeight = 44
 
   [[params.socialIcons]]
     name = 'email'
