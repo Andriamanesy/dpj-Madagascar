@@ -12,6 +12,7 @@ violation_type = 'Atteinte grave au droit à la vie'
 legal_status = 'Demande de clarification'
 severity = 'High'
 translationKey = '2025-09-youth-killed'
+lastmod = 2026-05-07T04:30:00+03:00
 +++
 
 {{< case-meta date="septembre 2025" location="Madagascar" type="Atteinte grave au droit à la vie" status="Demande de clarification et suivi actif" >}}
@@ -37,3 +38,5 @@ Les informations disponibles doivent être consolidées avec prudence afin de di
 ## Statut actuel
 
 Dossier suivi activement. Des informations complémentaires sont nécessaires avant publication d’un rapport détaillé.
+
+**Dernière mise à jour : 7 mai 2026.**

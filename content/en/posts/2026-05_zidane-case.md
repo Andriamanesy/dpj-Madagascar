@@ -12,6 +12,8 @@ violation_type = 'Alleged torture and violation of the right to life'
 legal_status = 'Submissions sent'
 severity = 'High'
 translationKey = '2026-05-zidane'
+lastmod = 2026-05-07T04:30:00+03:00
+images = ['/images/Justice_pour_Zidane_hu_6fb0bc054a952d82.webp']
 +++
 
 {{< case-meta date="May 5, 2026" location="Ambanja, Madagascar" type="Alleged torture and violation of the right to life" status="Submissions sent" >}}
@@ -44,3 +46,5 @@ These elements require an independent and impartial investigation consistent wit
 ## Current Status
 
 The case is being actively monitored. Responses from authorities and contacted institutions are pending.
+
+**Last updated: May 7, 2026.**

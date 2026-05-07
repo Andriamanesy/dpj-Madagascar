@@ -12,6 +12,7 @@ violation_type = 'Serious violation of the right to life'
 legal_status = 'Request for clarification'
 severity = 'High'
 translationKey = '2025-09-youth-killed'
+lastmod = 2026-05-07T04:30:00+03:00
 +++
 
 {{< case-meta date="September 2025" location="Madagascar" type="Serious violation of the right to life" status="Request for clarification and active monitoring" >}}
@@ -37,3 +38,5 @@ Available information must be consolidated carefully in order to distinguish est
 ## Current Status
 
 The case is under active monitoring. Additional information is needed before a detailed report can be published.
+
+**Last updated: May 7, 2026.**

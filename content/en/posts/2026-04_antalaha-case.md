@@ -12,6 +12,7 @@ violation_type = 'Alleged violence'
 legal_status = 'Awaiting investigation'
 severity = 'High'
 translationKey = '2026-04-antalaha'
+lastmod = 2026-05-07T04:30:00+03:00
 +++
 
 {{< case-meta date="April 2026" location="Antalaha, Madagascar" type="Alleged violence" status="Awaiting investigation" >}}
@@ -39,3 +40,5 @@ At this stage, the case should be presented as a set of allegations and testimon
 ## Current Status
 
 The case remains open. Updates will be published if official responses or additional verified elements become available.
+
+**Last updated: May 7, 2026.**

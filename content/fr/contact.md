@@ -25,6 +25,12 @@ Ne vous mettez pas en danger pour collecter une preuve. Si vous êtes surveillé
 
 Email : [deboutpourlajustice2@gmail.com](mailto:deboutpourlajustice2@gmail.com)
 
+## Formulaire de signalement
+
+{{< report-form >}}
+
+Si le formulaire ne fonctionne pas sur votre appareil, vous pouvez aussi utiliser l’email direct :
+
 {{< button href="mailto:deboutpourlajustice2@gmail.com?subject=Signalement%20d%27une%20violation&body=Nom%20ou%20pseudonyme%20%28facultatif%29%20%3A%0AContact%20s%C3%BBr%20%28facultatif%29%20%3A%0ALieu%20%3A%0ADate%20%3A%0ADescription%20des%20faits%20%3A%0APi%C3%A8ces%20ou%20documents%20disponibles%20%3A%0AAcceptez-vous%20d%27%C3%AAtre%20recontact%C3%A9%20%3F%20%3A%0A" label="Préparer un email de signalement" />}}
 
 ## Protection des témoins

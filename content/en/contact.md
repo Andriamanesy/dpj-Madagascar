@@ -25,6 +25,12 @@ Do not put yourself at risk to collect evidence. If you are monitored or threate
 
 Email: [deboutpourlajustice2@gmail.com](mailto:deboutpourlajustice2@gmail.com)
 
+## Report Form
+
+{{< report-form >}}
+
+If the form does not work on your device, you can also use the direct email option:
+
 {{< button href="mailto:deboutpourlajustice2@gmail.com?subject=Human%20rights%20violation%20report&body=Name%20or%20pseudonym%20%28optional%29%3A%0ASafe%20contact%20%28optional%29%3A%0ALocation%3A%0ADate%3A%0ADescription%20of%20facts%3A%0AFiles%20or%20documents%20available%3A%0ADo%20you%20agree%20to%20be%20contacted%3F%3A%0A" label="Prepare a report email" />}}
 
 ## Witness Protection

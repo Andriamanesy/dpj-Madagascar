@@ -46,6 +46,10 @@ enableRobotsTXT = true
         name = 'Signaler'
         url = '/contact/'
         weight = 40
+      [[languages.fr.menu.main]]
+        name = 'Mentions'
+        url = '/mentions/'
+        weight = 50
 
   [languages.en]
     label = 'English'
@@ -86,6 +90,10 @@ enableRobotsTXT = true
         name = 'Report a Case'
         url = '/contact/'
         weight = 40
+      [[languages.en.menu.main]]
+        name = 'Notice'
+        url = '/mentions/'
+        weight = 50
 
 [params]
   env = 'production'
@@ -100,6 +108,7 @@ enableRobotsTXT = true
   ShowWordCount = true
   disableSpecial1stPost = true
   mainSections = ['posts']
+  images = ['images/logo.png']
 
   [params.homeInfoParams]
     Title = 'Documenter l’injustice pour exiger la vérité.'

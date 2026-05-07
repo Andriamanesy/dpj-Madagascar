@@ -12,6 +12,8 @@ violation_type = 'Torture présumée et atteinte au droit à la vie'
 legal_status = 'Saisines effectuées'
 severity = 'High'
 translationKey = '2026-05-zidane'
+lastmod = 2026-05-07T04:30:00+03:00
+images = ['/images/Justice_pour_Zidane_hu_6fb0bc054a952d82.webp']
 +++
 
 {{< case-meta date="5 mai 2026" location="Ambanja, Madagascar" type="Torture présumée et atteinte au droit à la vie" status="Saisines effectuées" >}}
@@ -44,3 +46,5 @@ Ces éléments doivent faire l’objet d’une enquête indépendante, impartial
 ## Statut actuel
 
 Dossier suivi activement. En attente de réponse des autorités et institutions saisies.
+
+**Dernière mise à jour : 7 mai 2026.**

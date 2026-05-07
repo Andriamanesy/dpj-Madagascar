@@ -338,6 +338,75 @@ h3 {
   text-align: center;
 }
 
+.report-form {
+  display: grid;
+  gap: 18px;
+  max-width: 780px;
+  margin: 26px 0 32px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.report-form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.report-form label {
+  display: grid;
+  gap: 7px;
+  color: var(--primary-soft);
+  font-weight: 750;
+}
+
+.report-form input,
+.report-form textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #ffffff;
+  color: var(--primary);
+  font: inherit;
+}
+
+.report-form input {
+  min-height: 44px;
+  padding: 9px 12px;
+}
+
+.report-form textarea {
+  padding: 11px 12px;
+  resize: vertical;
+}
+
+.report-form input:focus,
+.report-form textarea:focus {
+  border-color: var(--accent);
+  outline: 2px solid rgba(185, 28, 28, 0.16);
+  outline-offset: 1px;
+}
+
+.report-form__check {
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  font-weight: 650;
+}
+
+.report-form__check input {
+  width: 18px;
+  min-height: 18px;
+  margin-top: 4px;
+}
+
+.report-form__trap {
+  position: absolute;
+  left: -10000px;
+}
+
 .dpj-alert,
 .case-meta {
   padding: 18px 20px;
@@ -607,6 +676,14 @@ h3 {
 
   .dpj-button {
     width: 100%;
+  }
+
+  .report-form {
+    padding: 18px;
+  }
+
+  .report-form__grid {
+    grid-template-columns: 1fr;
   }
 
   .post-entry {

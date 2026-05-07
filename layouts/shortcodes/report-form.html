@@ -1,0 +1,42 @@
+{{- $isEn := eq .Page.Language.Lang "en" -}}
+{{- $name := cond $isEn "case-report-en" "signalement-violation" -}}
+{{- $thanks := cond $isEn "/merci/" "/merci/" -}}
+<form class="report-form" name="{{ $name }}" method="POST" action="{{ $thanks | relLangURL }}" data-netlify="true" netlify-honeypot="website">
+  <input type="hidden" name="form-name" value="{{ $name }}">
+  <p class="report-form__trap">
+    <label>{{ if $isEn }}Leave this field empty{{ else }}Laissez ce champ vide{{ end }} <input name="website"></label>
+  </p>
+  <div class="report-form__grid">
+    <label>
+      {{ if $isEn }}Name or pseudonym{{ else }}Nom ou pseudonyme{{ end }}
+      <input type="text" name="name" autocomplete="name">
+    </label>
+    <label>
+      {{ if $isEn }}Safe contact{{ else }}Contact sûr{{ end }}
+      <input type="text" name="contact" autocomplete="email">
+    </label>
+    <label>
+      {{ if $isEn }}Location{{ else }}Lieu{{ end }}
+      <input type="text" name="location">
+    </label>
+    <label>
+      {{ if $isEn }}Date of facts{{ else }}Date des faits{{ end }}
+      <input type="text" name="case_date">
+    </label>
+  </div>
+  <label>
+    {{ if $isEn }}Description of facts{{ else }}Description des faits{{ end }}
+    <textarea name="description" rows="7" required></textarea>
+  </label>
+  <label>
+    {{ if $isEn }}Available files or documents{{ else }}Pièces ou documents disponibles{{ end }}
+    <textarea name="documents" rows="3"></textarea>
+  </label>
+  <label class="report-form__check">
+    <input type="checkbox" name="can_contact" value="yes">
+    <span>{{ if $isEn }}I agree to be contacted if follow-up is needed.{{ else }}J’accepte d’être recontacté si un suivi est nécessaire.{{ end }}</span>
+  </label>
+  <button class="dpj-button dpj-button--primary" type="submit">
+    {{ if $isEn }}Send report{{ else }}Envoyer le signalement{{ end }}
+  </button>
+</form>

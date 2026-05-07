@@ -12,6 +12,7 @@ violation_type = 'Violences présumées'
 legal_status = 'En attente d’enquête'
 severity = 'High'
 translationKey = '2026-04-antalaha'
+lastmod = 2026-05-07T04:30:00+03:00
 +++
 
 {{< case-meta date="avril 2026" location="Antalaha, Madagascar" type="Violences présumées" status="En attente d’enquête" >}}
@@ -39,3 +40,5 @@ Le collectif documente des allégations de violences survenues à Antalaha. Les 
 ## Statut actuel
 
 Le dossier reste ouvert. Une mise à jour sera publiée en cas de réponse officielle ou d’éléments vérifiés supplémentaires.
+
+**Dernière mise à jour : 7 mai 2026.**
