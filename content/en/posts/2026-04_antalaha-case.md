@@ -13,6 +13,8 @@ legal_status = 'Awaiting investigation'
 severity = 'High'
 translationKey = '2026-04-antalaha'
 lastmod = 2026-05-07T04:30:00+03:00
+ShowShareButtons = true
+ShareButtons = ['facebook', 'whatsapp', 'linkedin', 'x', 'telegram']
 +++
 
 {{< case-meta date="April 2026" location="Antalaha, Madagascar" type="Alleged violence" status="Awaiting investigation" >}}

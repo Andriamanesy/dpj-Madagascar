@@ -407,6 +407,39 @@ h3 {
   left: -10000px;
 }
 
+.post-footer .share-buttons {
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 22px;
+  padding: 14px 0 0;
+  border-top: 1px solid var(--border-soft);
+}
+
+.post-footer .share-buttons::before {
+  align-self: center;
+  margin-right: 4px;
+  color: var(--secondary);
+  font-size: 0.92rem;
+  font-weight: 800;
+  content: "Partager";
+}
+
+html[lang="en"] .post-footer .share-buttons::before {
+  content: "Share";
+}
+
+.post-footer .share-buttons a {
+  border-color: var(--border);
+  background: #ffffff;
+  color: var(--primary-soft);
+}
+
+.post-footer .share-buttons a:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
 .dpj-alert,
 .case-meta {
   padding: 18px 20px;

@@ -14,6 +14,8 @@ severity = 'High'
 translationKey = '2026-05-zidane'
 lastmod = 2026-05-07T04:30:00+03:00
 images = ['/images/Justice_pour_Zidane_hu_6fb0bc054a952d82.webp']
+ShowShareButtons = true
+ShareButtons = ['facebook', 'whatsapp', 'linkedin', 'x', 'telegram']
 +++
 
 {{< case-meta date="5 mai 2026" location="Ambanja, Madagascar" type="Torture présumée et atteinte au droit à la vie" status="Saisines effectuées" >}}

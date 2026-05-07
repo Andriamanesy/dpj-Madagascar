@@ -13,6 +13,8 @@ legal_status = 'Demande de clarification'
 severity = 'High'
 translationKey = '2025-09-youth-killed'
 lastmod = 2026-05-07T04:30:00+03:00
+ShowShareButtons = true
+ShareButtons = ['facebook', 'whatsapp', 'linkedin', 'x', 'telegram']
 +++
 
 {{< case-meta date="septembre 2025" location="Madagascar" type="Atteinte grave au droit à la vie" status="Demande de clarification et suivi actif" >}}
