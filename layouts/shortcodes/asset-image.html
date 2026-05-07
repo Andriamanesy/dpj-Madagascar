@@ -1,0 +1,15 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $caption := .Get "caption" -}}
+{{- $class := .Get "class" | default "" -}}
+{{- with resources.Get $src -}}
+  {{- $image := .Resize "1200x webp q85" -}}
+  <figure class="dpj-figure {{ $class }}">
+    <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ $alt }}" loading="lazy">
+    {{- with $caption }}
+    <figcaption>{{ . | markdownify }}</figcaption>
+    {{- end }}
+  </figure>
+{{- else -}}
+  {{- warnf "asset-image shortcode: image not found: %s" $src -}}
+{{- end -}}

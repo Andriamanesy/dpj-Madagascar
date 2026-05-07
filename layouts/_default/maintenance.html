@@ -1,0 +1,15 @@
+{{- define "main" }}
+<article class="maintenance-page">
+  <p class="hero-kicker">{{ if eq .Language.Lang "en" }}Content coming soon{{ else }}Contenu bientôt disponible{{ end }}</p>
+  <h1>{{ .Title }}</h1>
+  <div class="entry-content md-content">
+    {{ .Content }}
+  </div>
+  <div class="buttons-container">
+    <a class="dpj-button dpj-button--primary" href="{{ "/" | relLangURL }}">
+      {{ if eq .Language.Lang "en" }}Back to home{{ else }}Retour à l’accueil{{ end }}
+    </a>
+  </div>
+</article>
+{{- end }}
+

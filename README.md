@@ -74,3 +74,16 @@ make serve
 make build
 make clean
 ```
+
+## Déployer sur Netlify
+
+Le projet contient un fichier `netlify.toml` avec la configuration de build.
+
+Réglages Netlify :
+
+- Base directory : laisser vide si le dépôt GitHub pointe directement sur `dpj-madagascar`, sinon mettre `dpj-madagascar`
+- Build command : `hugo --gc --minify`
+- Publish directory : `public`
+- Hugo version : `0.161.1`
+
+Après connexion du dépôt GitHub à Netlify, chaque push sur la branche `main` déclenche automatiquement un nouveau déploiement.

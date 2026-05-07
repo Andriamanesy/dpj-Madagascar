@@ -16,6 +16,8 @@ translationKey = '2026-05-zidane'
 
 {{< case-meta date="May 5, 2026" location="Ambanja, Madagascar" type="Alleged torture and violation of the right to life" status="Submissions sent" >}}
 
+{{< asset-image src="images/Justice_pour_Zidane.jpeg" alt="Justice for Zidane visual" caption="Citizen visual calling for justice for Zidane." >}}
+
 ## Summary
 
 Zidane, an 18-year-old young man, reportedly died while in custody in Ambanja. Testimonies and material elements refer to serious violence before his death.

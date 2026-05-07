@@ -1,0 +1,19 @@
+{{- define "main" }}
+<article class="maintenance-page not-found-page">
+  <p class="hero-kicker">{{ if eq .Site.Language.Lang "en" }}Unavailable page{{ else }}Page indisponible{{ end }}</p>
+  <h1>{{ if eq .Site.Language.Lang "en" }}Page under maintenance{{ else }}Page en maintenance{{ end }}</h1>
+  <p>
+    {{ if eq .Site.Language.Lang "en" }}
+    The requested content is not available yet. It may be published later.
+    {{ else }}
+    Le contenu demandé n’est pas encore disponible. Il pourra être publié prochainement.
+    {{ end }}
+  </p>
+  <div class="buttons-container">
+    <a class="dpj-button dpj-button--primary" href="{{ "/" | relLangURL }}">
+      {{ if eq .Site.Language.Lang "en" }}Back to home{{ else }}Retour à l’accueil{{ end }}
+    </a>
+  </div>
+</article>
+{{- end }}
+

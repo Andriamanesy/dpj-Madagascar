@@ -14,14 +14,18 @@ Do not put yourself at risk to collect evidence. If you are monitored or threate
 
 ## Useful Information
 
-- What happened?
-- Where and when did it happen?
-- Who are the victims or witnesses, if this can be shared safely?
-- Are there photos, videos, medical documents, or complaint references?
+- Your name or pseudonym, if you wish to share it
+- A safe contact method, if you agree to be contacted
+- What happened
+- Where and when it happened
+- Victims or witnesses, only if this can be shared safely
+- Photos, videos, medical documents, complaint references, or other available material
 
 ## Contact
 
 Email: [deboutpourlajustice2@gmail.com](mailto:deboutpourlajustice2@gmail.com)
+
+{{< button href="mailto:deboutpourlajustice2@gmail.com?subject=Human%20rights%20violation%20report&body=Name%20or%20pseudonym%20%28optional%29%3A%0ASafe%20contact%20%28optional%29%3A%0ALocation%3A%0ADate%3A%0ADescription%20of%20facts%3A%0AFiles%20or%20documents%20available%3A%0ADo%20you%20agree%20to%20be%20contacted%3F%3A%0A" label="Prepare a report email" />}}
 
 ## Witness Protection
 

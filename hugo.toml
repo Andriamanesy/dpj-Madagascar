@@ -35,6 +35,10 @@ enableRobotsTXT = true
         url = '/about/'
         weight = 30
       [[languages.fr.menu.main]]
+        name = 'Notre méthode'
+        url = '/method/'
+        weight = 32
+      [[languages.fr.menu.main]]
         name = 'Ressources'
         url = '/resources/'
         weight = 35
@@ -70,6 +74,10 @@ enableRobotsTXT = true
         name = 'About'
         url = '/about/'
         weight = 30
+      [[languages.en.menu.main]]
+        name = 'Our Method'
+        url = '/method/'
+        weight = 32
       [[languages.en.menu.main]]
         name = 'Resources'
         url = '/resources/'

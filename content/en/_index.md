@@ -6,7 +6,7 @@ translationKey = 'home'
 
 ## Defend fundamental rights. Demand justice.
 
-Stand Up for Justice Madagascar is a citizen collective dedicated to documenting serious human rights violations, supporting victims, and engaging competent national and international authorities.
+Stand Up for Justice Madagascar is an independent, non-partisan citizen collective bringing together complementary profiles: a physician, a public affairs-trained economist, lawyers, jurists, and engaged citizens.
 
 ## Latest alerts
 
@@ -15,3 +15,5 @@ Read the collective’s reports, organized by date, location, alleged violation 
 ## Our method
 
 We prioritize rigorous documentation: collecting information, verifying facts, anonymizing sensitive details when necessary, and submitting alerts to relevant institutions.
+
+{{< button href="/method/" label="Understand our method" variant="secondary" />}}

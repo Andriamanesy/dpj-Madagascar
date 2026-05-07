@@ -12,10 +12,12 @@
         {{- if or .PrimaryButtonText .SecondaryButtonText }}
         <div class="buttons-container" aria-label="{{ if eq $.Page.Language.Lang "en" }}Primary actions{{ else }}Actions principales{{ end }}">
             {{- with .PrimaryButtonText }}
-            <a class="dpj-button dpj-button--primary" href="{{ site.Params.homeInfoParams.PrimaryButtonURL | relLangURL }}">{{ . }}</a>
+            {{- $primaryURL := site.Params.homeInfoParams.PrimaryButtonURL | default "/maintenance/" -}}
+            <a class="dpj-button dpj-button--primary" href="{{ $primaryURL | relLangURL }}">{{ . }}</a>
             {{- end }}
             {{- with .SecondaryButtonText }}
-            <a class="dpj-button dpj-button--secondary" href="{{ site.Params.homeInfoParams.SecondaryButtonURL | relLangURL }}">{{ . }}</a>
+            {{- $secondaryURL := site.Params.homeInfoParams.SecondaryButtonURL | default "/maintenance/" -}}
+            <a class="dpj-button dpj-button--secondary" href="{{ $secondaryURL | relLangURL }}">{{ . }}</a>
             {{- end }}
         </div>
         {{- end }}
