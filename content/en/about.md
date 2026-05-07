@@ -12,7 +12,10 @@ In a context of institutional violence and persistent impunity, we act as a vigi
 
 ## Governance
 
-The collective is notably represented by Dr. MAMILAZA Novario and Mr. ANDRIAMANESY Brian.
+{{< leader-grid >}}
+{{< leader-card src="images/president.jpeg" name="Dr. MAMILAZA Novario" role="Collective President" bio="General coordination, institutional follow-up, and public representation of the collective." >}}
+{{< leader-card src="images/sg.jpg" name="Mr. ANDRIAMANESY Brian" role="Secretary General" bio="Documentation workflows, public communication, and follow-up of the collective’s actions." >}}
+{{< /leader-grid >}}
 
 ## Organizations Contacted
 

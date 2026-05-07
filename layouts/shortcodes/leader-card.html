@@ -1,0 +1,18 @@
+{{- $src := .Get "src" -}}
+{{- $name := .Get "name" -}}
+{{- $role := .Get "role" -}}
+{{- $bio := .Get "bio" -}}
+{{- $image := resources.Get $src -}}
+<article class="leader-card">
+  {{- with $image }}
+    {{- $processed := .Fill "420x420 center webp q82" -}}
+    <img class="leader-card__image" src="{{ $processed.RelPermalink }}" width="{{ $processed.Width }}" height="{{ $processed.Height }}" alt="{{ $name }}">
+  {{- end }}
+  <div class="leader-card__body">
+    <p class="leader-card__role">{{ $role }}</p>
+    <h3>{{ $name }}</h3>
+    {{- with $bio }}
+    <p>{{ . }}</p>
+    {{- end }}
+  </div>
+</article>

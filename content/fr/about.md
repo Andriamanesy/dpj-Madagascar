@@ -12,7 +12,10 @@ Dans un contexte de violences institutionnelles et d’impunité persistante, no
 
 ## Gouvernance
 
-Le collectif est porté notamment par le Dr MAMILAZA Novario et M. ANDRIAMANESY Brian.
+{{< leader-grid >}}
+{{< leader-card src="images/president.jpeg" name="Dr MAMILAZA Novario" role="Président du collectif" bio="Coordination générale, suivi institutionnel et représentation publique du collectif." >}}
+{{< leader-card src="images/sg.jpg" name="M. ANDRIAMANESY Brian" role="Secrétaire général" bio="Organisation documentaire, communication publique et suivi des démarches du collectif." >}}
+{{< /leader-grid >}}
 
 ## Organisations saisies
 
